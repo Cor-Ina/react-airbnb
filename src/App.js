@@ -10,15 +10,8 @@ export default function App() {
     return (
       <Card 
           key = {obj.id}
-          // create own prop called item
-          item = {obj}
-              // {item: {id: 1, 
-              // title: "Life Lessons with Katie Zaferes", 
-              // description: "I will share with you what I call "Positively Impactful Moments of Disappointment." Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.", 
-              // price: 136, coverImg: "katie-zaferes.png", 
-              // stats: {rating: 5, reviewCount: 6}, 
-              // location: "Online", 
-              // openSpots: 0}}
+          {...obj}
+              
       />
     )
 })        
@@ -32,3 +25,12 @@ return (
   </div>
 )
 }
+
+
+// {item: {id: 1, 
+// title: "Life Lessons with Katie Zaferes", 
+// description: "I will share with you what I call "Positively Impactful Moments of Disappointment." Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.", 
+// price: 136, coverImg: "katie-zaferes.png", 
+// stats: {rating: 5, reviewCount: 6}, 
+// location: "Online", 
+// openSpots: 0}}
