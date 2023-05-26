@@ -11,12 +11,20 @@ export default function Card(props) {
     return (
         // defines how the props will be used/displayed
         <div className="card">
-            {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img src={`../images/${props.img}`} className="card--image" alt=""/>
+            {
+                badgeText && 
+                <div className="card--badge">{badgeText}</div>
+            }
+
+            <img 
+                src={`../images/${props.coverImg}`} 
+                className="card--image" alt=""
+            />
+
             <div className="card--stats">
                 <img src="../images/star.png" className="card--star" alt=""/>
-                <span>{props.rating}</span>
-                <span className="gray">({props.reviewCount}) • </span>
+                <span>{props.stats.rating}</span>
+                <span className="gray">({props.stats.reviewCount}) • </span>
                 <span className="gray">{props.location}</span>
             </div>
             <p>{props.title}</p>
