@@ -6,7 +6,6 @@ import data from "./data.js"
 import './App.css';
 
 export default function App() {
-  // <Hero />
   const cards = data.map(item => {
     return (
       <Card 
