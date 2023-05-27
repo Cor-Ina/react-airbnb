@@ -19,14 +19,14 @@ export default function App() {
           openSpots={item.openSpots}
       />
     )
-})        
+  })        
 
-return (
-  <div>
-    <Navbar />
-      <section className="cards-list">
-          {cards}
-      </section>
-  </div>
-)
+  return (
+    <div>
+      <Navbar />
+        <section className="cards-list">
+            {cards}
+        </section>
+    </div>
+  )
 }
