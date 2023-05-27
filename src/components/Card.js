@@ -11,10 +11,7 @@ export default function Card(props) {
     return (
         // defines how the props will be used/displayed
         <div className="card">
-            {
-                badgeText && 
-                <div className="card--badge">{badgeText}</div>
-            }
+            {badgeText && <div className="card--badge">{badgeText}</div>}
 
             <img 
                 src={`../images/${props.coverImg}`} 
